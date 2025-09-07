@@ -1,0 +1,83 @@
+# Akash Network SDL (Stack Definition Language) Configuration
+# For HackOdisha 5.0 Decentralized AI Legal Assistant
+
+version: "2.0"
+
+services:
+  legal-ai-backend:
+    image: your-dockerhub-username/legal-ai-backend:latest
+    expose:
+      - port: 8000
+        as: 80
+        to:
+          - global: true
+    env:
+      - "ENVIRONMENT=production"
+      - "MODEL_CACHE_DIR=/app/models"
+      - "MAX_FILE_SIZE=10485760"
+      - "CORS_ORIGINS=*"
+    command:
+      - "uvicorn"
+      - "document_ai:app" 
+      - "--host"
+      - "0.0.0.0"
+      - "--port"
+      - "8000"
+      - "--workers"
+      - "2"
+
+  legal-ai-frontend:
+    image: nginx:alpine
+    expose:
+      - port: 80
+        as: 3000
+        to:
+          - global: true
+    env:
+      - "BACKEND_URL=http://legal-ai-backend"
+
+profiles:
+  compute:
+    legal-ai-backend:
+      resources:
+        cpu:
+          units: 2.0
+        memory:
+          size: 4Gi
+        storage:
+          size: 10Gi
+        gpu:
+          units: 1
+          attributes:
+            vendor:
+              nvidia:
+                - model: rtx4090
+                - model: rtx3090
+                - model: rtx3080
+                - model: a100
+                - model: v100
+    legal-ai-frontend:
+      resources:
+        cpu:
+          units: 0.5
+        memory:
+          size: 512Mi
+        storage:
+          size: 1Gi
+
+deployment:
+  legal-ai-backend:
+    akash:
+      profile: compute
+      count: 1
+
+  legal-ai-frontend:
+    akash:
+      profile: compute
+      count: 1
+
+endpoints:
+  legal-ai-backend:
+    kind: ip
+  legal-ai-frontend:
+    kind: ip

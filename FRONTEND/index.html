@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akash AI Legal Assistant - Decentralized GPU Processing</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Status Bar -->
+    <div id="status-bar" class="status-bar">
+        <div class="status-container">
+            <div class="status-item">
+                <span class="status-icon">🟢</span>
+                <span class="status-text">Akash Network: Online</span>
+            </div>
+            <div class="status-item">
+                <span class="status-icon">⚡</span>
+                <span class="status-text">GPU Nodes: <span id="gpu-count">24</span> Available</span>
+            </div>
+            <div class="status-item">
+                <span class="status-icon">🔒</span>
+                <span class="status-text">Privacy: Fully Decentralized</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <span class="brand-icon">⚖️</span>
+                <div class="brand-text-container">
+                    <span class="brand-text">AI Legal Assistant</span>
+                    <span class="brand-subtitle">Powered by Akash Network</span>
+                </div>
+            </div>
+            <div class="nav-links">
+                <a href="#" class="nav-link active" data-page="home">Home</a>
+                <a href="#" class="nav-link" data-page="summarize">Summarize</a>
+                <a href="#" class="nav-link" data-page="search">Search</a>
+                <a href="#" class="nav-link" data-page="extract">Extract</a>
+                <a href="#" class="nav-link" data-page="petition">Petition</a>
+                <a href="#" class="nav-link" data-page="about">About</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Page -->
+    <div id="home-page" class="page active">
+        <!-- Zero Requirements Banner -->
+        <div class="zero-requirements-banner">
+            <div class="container">
+                <div class="banner-content">
+                    <h2>🚀 No Installation Required • Works on Any Device • GPU Power Without Ownership</h2>
+                    <p>Experience enterprise-grade AI processing on smartphones, tablets, or basic computers</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Decentralized AI Legal Assistant</h1>
+                    <p class="hero-subtitle">Harness the power of distributed GPU processing for legal document analysis - no technical setup required</p>
+                    <div class="akash-badges">
+                        <div class="badge">
+                            <span class="badge-icon">📱</span>
+                            <span>Mobile Ready</span>
+                        </div>
+                        <div class="badge">
+                            <span class="badge-icon">🔒</span>
+                            <span>Privacy First</span>
+                        </div>
+                        <div class="badge">
+                            <span class="badge-icon">💰</span>
+                            <span>70% Cost Savings</span>
+                        </div>
+                        <div class="badge">
+                            <span class="badge-icon">⚡</span>
+                            <span>GPU Accelerated</span>
+                        </div>
+                    </div>
+                    <div class="hero-actions">
+                        <button class="btn btn--primary btn--lg" data-page="summarize">Start Processing</button>
+                        <button class="btn btn--outline btn--lg" data-page="about">How It Works</button>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="network-visualization">
+                        <div class="central-node">
+                            <div class="node-pulse"></div>
+                            <span>Your Device</span>
+                        </div>
+                        <div class="gpu-node gpu-node-1">
+                            <span>GPU Node 1</span>
+                        </div>
+                        <div class="gpu-node gpu-node-2">
+                            <span>GPU Node 2</span>
+                        </div>
+                        <div class="gpu-node gpu-node-3">
+                            <span>GPU Node 3</span>
+                        </div>
+                        <div class="connection-line line-1"></div>
+                        <div class="connection-line line-2"></div>
+                        <div class="connection-line line-3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Akash Benefits Section -->
+        <div class="benefits-section">
+            <div class="container">
+                <h2 class="section-title">Why Choose Akash Network?</h2>
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">🌐</div>
+                        <h3>Truly Decentralized</h3>
+                        <p>Processing distributed across multiple independent GPU providers worldwide</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon">🔐</div>
+                        <h3>Privacy Preserving</h3>
+                        <p>Documents processed but never stored. GDPR compliant with end-to-end encryption</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon">📱</div>
+                        <h3>Universal Access</h3>
+                        <p>Works on any device - from basic smartphones to high-end workstations</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon">💸</div>
+                        <h3>Cost Effective</h3>
+                        <p>Up to 70% cheaper than traditional cloud providers with comparable performance</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Device Compatibility Section -->
+        <div class="compatibility-section">
+            <div class="container">
+                <h2 class="section-title">Works Everywhere</h2>
+                <div class="device-grid">
+                    <div class="device-item">
+                        <div class="device-icon">📱</div>
+                        <span>Smartphones</span>
+                    </div>
+                    <div class="device-item">
+                        <div class="device-icon">💻</div>
+                        <span>Laptops</span>
+                    </div>
+                    <div class="device-item">
+                        <div class="device-icon">🖥️</div>
+                        <span>Desktops</span>
+                    </div>
+                    <div class="device-item">
+                        <div class="device-icon">📟</div>
+                        <span>Tablets</span>
+                    </div>
+                    <div class="device-item">
+                        <div class="device-icon">⌚</div>
+                        <span>Smart Devices</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Features Section -->
+        <div class="features-section">
+            <div class="container">
+                <h2 class="section-title">AI-Powered Legal Tools</h2>
+                <div class="features-grid">
+                    <div class="feature-card" data-page="summarize">
+                        <div class="feature-icon">📄</div>
+                        <h3 class="feature-title">Document Summarization</h3>
+                        <p class="feature-description">AI-powered summaries processed on distributed GPU nodes with multilingual support</p>
+                        <div class="feature-tech">
+                            <span class="tech-badge">BART Model</span>
+                            <span class="tech-badge">GPU Accelerated</span>
+                        </div>
+                        <button class="btn btn--secondary">Try Now</button>
+                    </div>
+                    <div class="feature-card" data-page="search">
+                        <div class="feature-icon">🔍</div>
+                        <h3 class="feature-title">Semantic Search</h3>
+                        <p class="feature-description">Natural language search through legal corpus using distributed vector processing</p>
+                        <div class="feature-tech">
+                            <span class="tech-badge">FAISS Index</span>
+                            <span class="tech-badge">Vector Search</span>
+                        </div>
+                        <button class="btn btn--secondary">Try Now</button>
+                    </div>
+                    <div class="feature-card" data-page="extract">
+                        <div class="feature-icon">🏷️</div>
+                        <h3 class="feature-title">Entity Extraction</h3>
+                        <p class="feature-description">Extract legal entities and citations with privacy-preserving processing</p>
+                        <div class="feature-tech">
+                            <span class="tech-badge">spaCy NLP</span>
+                            <span class="tech-badge">Privacy First</span>
+                        </div>
+                        <button class="btn btn--secondary">Try Now</button>
+                    </div>
+                    <div class="feature-card" data-page="petition">
+                        <div class="feature-icon">⚖️</div>
+                        <h3 class="feature-title">Petition Generator</h3>
+                        <p class="feature-description">Generate court-ready legal petitions with AI assistance and proper formatting</p>
+                        <div class="feature-tech">
+                            <span class="tech-badge">Template Engine</span>
+                            <span class="tech-badge">Court Ready</span>
+                        </div>
+                        <button class="btn btn--secondary">Try Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Document Summarization Page -->
+    <div id="summarize-page" class="page">
+        <div class="container">
+            <div class="page-header">
+                <h1>AI Document Summarization</h1>
+                <p>Upload legal documents for AI-powered analysis on Akash Network's distributed GPU infrastructure</p>
+                <div class="processing-info">
+                    <div class="info-badge">
+                        <span class="info-icon">⚡</span>
+                        <span>GPU Accelerated Processing</span>
+                    </div>
+                    <div class="info-badge">
+                        <span class="info-icon">🔒</span>
+                        <span>Documents Never Stored</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="content-grid">
+                <div class="upload-section">
+                    <div class="card">
+                        <div class="card__body">
+                            <div class="upload-area" id="upload-area-summarize">
+                                <div class="upload-content">
+                                    <div class="upload-icon">📄</div>
+                                    <p class="upload-text">Drag & drop your document here</p>
+                                    <p class="upload-subtext">or <span class="upload-link" id="browse-summarize">browse files</span></p>
+                                    <p class="upload-formats">Supports PDF, DOCX, TXT</p>
+                                    <input type="file" id="file-input-summarize" accept=".pdf,.docx,.txt" hidden>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="form-label">Language</label>
+                                <select class="form-control" id="language-select">
+                                    <option value="en">English</option>
+                                    <option value="or">Odia (ଓଡ଼ିଆ)</option>
+                                    <option value="hi">Hindi (हिंदी)</option>
+                                </select>
+                            </div>
+                            
+                            <button class="btn btn--primary btn--full-width" id="summarize-btn" disabled>
+                                <span class="btn-text">Process on Akash GPU</span>
+                                <span class="loading-spinner hidden">⚡</span>
+                            </button>
+                            
+                            <div class="processing-stats" id="processing-stats" style="display: none;">
+                                <div class="stat-item">
+                                    <span class="stat-label">Processing Node:</span>
+                                    <span class="stat-value" id="processing-node">akash-gpu-03</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-label">GPU Utilization:</span>
+                                    <span class="stat-value" id="gpu-utilization">78%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="results-section">
+                    <div class="card">
+                        <div class="card__body">
+                            <div class="result-header">
+                                <h3>Summary Result</h3>
+                                <div class="privacy-badge">
+                                    <span class="badge-icon">🔒</span>
+                                    <span>Privacy Protected</span>
+                                </div>
+                            </div>
+                            <div id="summary-result" class="result-content">
+                                <p class="placeholder-text">Upload a document to see the AI-generated summary here</p>
+                            </div>
+                            <button class="btn btn--outline" id="copy-summary" style="display: none;">Copy Summary</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Semantic Search Page -->
+    <div id="search-page" class="page">
+        <div class="container">
+            <div class="page-header">
+                <h1>AI Semantic Search</h1>
+                <p>Search through legal corpus using natural language on distributed vector processing infrastructure</p>
+                <div class="processing-info">
+                    <div class="info-badge">
+                        <span class="info-icon">🔍</span>
+                        <span>Vector Search Engine</span>
+                    </div>
+                    <div class="info-badge">
+                        <span class="info-icon">🌐</span>
+                        <span>Distributed Processing</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="search-section">
+                <div class="card">
+                    <div class="card__body">
+                        <div class="search-form">
+                            <div class="form-group">
+                                <label class="form-label">Legal Query</label>
+                                <textarea class="form-control" id="search-query" placeholder="Enter your legal query here... e.g., 'contract breach arbitration'" rows="3"></textarea>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="form-label">Number of Results</label>
+                                <select class="form-control" id="search-top-k">
+                                    <option value="3">3 Results</option>
+                                    <option value="5">5 Results</option>
+                                    <option value="10">10 Results</option>
+                                </select>
+                            </div>
+                            
+                            <button class="btn btn--primary btn--full-width" id="search-btn">
+                                <span class="btn-text">Search on Akash Network</span>
+                                <span class="loading-spinner hidden">🔍</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="search-results" id="search-results" style="display: none;">
+                <div class="card">
+                    <div class="card__body">
+                        <div class="result-header">
+                            <h3>Search Results</h3>
+                            <div class="search-stats">
+                                <span id="search-time">Processed in 0.8s</span>
+                            </div>
+                        </div>
+                        <div id="search-results-content"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Entity Extraction Page -->
+    <div id="extract-page" class="page">
+        <div class="container">
+            <div class="page-header">
+                <h1>Legal Entity Extraction</h1>
+                <p>Extract legal entities, citations, and key information using privacy-preserving AI processing</p>
+                <div class="processing-info">
+                    <div class="info-badge">
+                        <span class="info-icon">🏷️</span>
+                        <span>NLP Processing</span>
+                    </div>
+                    <div class="info-badge">
+                        <span class="info-icon">🔐</span>
+                        <span>Zero Data Retention</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="content-grid">
+                <div class="upload-section">
+                    <div class="card">
+                        <div class="card__body">
+                            <div class="upload-area" id="upload-area-extract">
+                                <div class="upload-content">
+                                    <div class="upload-icon">🏷️</div>
+                                    <p class="upload-text">Drag & drop your document here</p>
+                                    <p class="upload-subtext">or <span class="upload-link" id="browse-extract">browse files</span></p>
+                                    <p class="upload-formats">Supports PDF, DOCX, TXT</p>
+                                    <input type="file" id="file-input-extract" accept=".pdf,.docx,.txt" hidden>
+                                </div>
+                            </div>
+                            
+                            <button class="btn btn--primary btn--full-width" id="extract-btn" disabled>
+                                <span class="btn-text">Extract on Akash GPU</span>
+                                <span class="loading-spinner hidden">🏷️</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="results-section">
+                    <div class="card">
+                        <div class="card__body">
+                            <div class="result-header">
+                                <h3>Extraction Results</h3>
+                                <div class="privacy-badge">
+                                    <span class="badge-icon">🛡️</span>
+                                    <span>Privacy Protected</span>
+                                </div>
+                            </div>
+                            <div id="extract-result" class="result-content">
+                                <p class="placeholder-text">Upload a document to see extracted entities and citations here</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Petition Generator Page -->
+    <div id="petition-page" class="page">
+        <div class="container">
+            <div class="page-header">
+                <h1>AI Legal Petition Generator</h1>
+                <p>Generate court-ready legal petitions with AI assistance and proper formatting</p>
+                <div class="processing-info">
+                    <div class="info-badge">
+                        <span class="info-icon">⚖️</span>
+                        <span>Court Ready Format</span>
+                    </div>
+                    <div class="info-badge">
+                        <span class="info-icon">🤖</span>
+                        <span>AI Assisted</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="content-grid">
+                <div class="form-section">
+                    <div class="card">
+                        <div class="card__body">
+                            <form id="petition-form">
+                                <div class="form-group">
+                                    <label class="form-label">Petitioner Name</label>
+                                    <input type="text" class="form-control" id="petitioner" placeholder="Enter petitioner name" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label class="form-label">Respondent Name</label>
+                                    <input type="text" class="form-control" id="respondent" placeholder="Enter respondent name" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label class="form-label">Grounds</label>
+                                    <textarea class="form-control" id="grounds" placeholder="Enter the grounds for the petition" rows="5" required></textarea>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label class="form-label">Prayer/Relief Sought</label>
+                                    <textarea class="form-control" id="prayer" placeholder="Enter the prayer/relief sought" rows="4" required></textarea>
+                                </div>
+                                
+                                <button type="submit" class="btn btn--primary btn--full-width">
+                                    <span class="btn-text">Generate Petition</span>
+                                    <span class="loading-spinner hidden">⚖️</span>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="preview-section">
+                    <div class="card">
+                        <div class="card__body">
+                            <div class="result-header">
+                                <h3>Petition Preview</h3>
+                                <div class="format-badge">
+                                    <span class="badge-icon">📋</span>
+                                    <span>Court Format</span>
+                                </div>
+                            </div>
+                            <div id="petition-preview" class="petition-content">
+                                <p class="placeholder-text">Fill out the form to see the formatted petition here</p>
+                            </div>
+                            <div class="petition-actions" id="petition-actions" style="display: none;">
+                                <button class="btn btn--outline" id="copy-petition">Copy Petition</button>
+                                <button class="btn btn--secondary" id="download-petition">Download</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Page -->
+    <div id="about-page" class="page">
+        <div class="container">
+            <div class="page-header">
+                <h1>About Akash AI Legal Assistant</h1>
+                <p>Empowering legal professionals with decentralized AI processing</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="card">
+                    <div class="card__body">
+                        <h3>Powered by Akash Network</h3>
+                        <p>Our AI Legal Assistant leverages Akash Network's decentralized cloud infrastructure to provide enterprise-grade GPU processing without requiring users to own expensive hardware. This revolutionary approach makes advanced AI accessible to everyone, from solo practitioners to large law firms.</p>
+                        
+                        <h3>Key Advantages</h3>
+                        <ul>
+                            <li><strong>Universal Access:</strong> Works on any device with a web browser</li>
+                            <li><strong>Cost Effective:</strong> 70% cheaper than traditional cloud providers</li>
+                            <li><strong>Privacy First:</strong> Documents processed but never stored</li>
+                            <li><strong>Decentralized:</strong> No single point of failure or control</li>
+                            <li><strong>GPU Accelerated:</strong> High-performance processing on distributed nodes</li>
+                        </ul>
+                        
+                        <h3>Technology Stack</h3>
+                        <ul>
+                            <li>Document summarization using BART and IndIC-BERT models</li>
+                            <li>Semantic search with sentence transformers and FAISS indexing</li>
+                            <li>Named entity recognition with spaCy</li>
+                            <li>OCR support for scanned documents</li>
+                            <li>Multi-language support (English, Odia, Hindi)</li>
+                        </ul>
+
+                        <h3>HackOdisha 5.0 Project</h3>
+                        <p>This application was developed for the Akash Network Deployment Track at HackOdisha 5.0, Eastern India's premier hackathon. It demonstrates the power of decentralized computing for AI applications while addressing real-world problems in India's judicial system.</p>
+                        
+                        <h3>Disclaimer</h3>
+                        <p class="disclaimer">This AI assistant is designed to aid legal professionals and should not be considered as legal advice. Always consult with qualified legal counsel for important legal matters.</p>
+                        
+                        <h3>Akash Network Resources</h3>
+                        <div class="akash-links">
+                            <a href="https://console.akash.network" target="_blank" class="btn btn--outline">Akash Console</a>
+                            <a href="https://akash.network" target="_blank" class="btn btn--outline">Learn About Akash</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Processing Modal -->
+    <div id="processing-modal" class="modal hidden">
+        <div class="modal-content processing-modal-content">
+            <div class="processing-visualization">
+                <div class="gpu-processing-animation">
+                    <div class="gpu-node active"></div>
+                    <div class="gpu-node active"></div>
+                    <div class="gpu-node active"></div>
+                </div>
+                <h3 id="processing-title">Processing on Akash GPU Node...</h3>
+                <p id="processing-message">Analyzing document with distributed AI processing</p>
+                <div class="processing-details">
+                    <div class="detail-row">
+                        <span>Node:</span>
+                        <span id="current-node">akash-gpu-07</span>
+                    </div>
+                    <div class="detail-row">
+                        <span>GPU Utilization:</span>
+                        <span id="current-utilization">82%</span>
+                    </div>
+                    <div class="detail-row">
+                        <span>Privacy:</span>
+                        <span class="privacy-indicator">🔒 Protected</span>
+                    </div>
+                </div>
+                <div class="processing-progress">
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progress-fill"></div>
+                    </div>
+                    <span id="progress-text">Processing...</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Error Modal -->
+    <div id="error-modal" class="modal hidden">
+        <div class="modal-content">
+            <div class="error-content">
+                <div class="error-icon">❌</div>
+                <h3>Processing Error</h3>
+                <p id="error-message">An error occurred during processing. Please try again.</p>
+                <button class="btn btn--primary" onclick="closeModal('error-modal')">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Success Modal -->
+    <div id="success-modal" class="modal hidden">
+        <div class="modal-content">
+            <div class="success-content">
+                <div class="success-icon">✅</div>
+                <h3>Processing Complete</h3>
+                <p id="success-message">Your request has been processed successfully on Akash Network!</p>
+                <button class="btn btn--primary" onclick="closeModal('success-modal')">Continue</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
