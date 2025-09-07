@@ -27,19 +27,28 @@ The Decentralized AI Legal Assistant is an AI-powered application designed to si
 - Akash Network account for deployment (optional)
 
 ### Installation & Running Locally
-git clone https://github.com/yourusername/legal-ai-assistant.git
-cd legal-ai-assistant
+Clone the repository:
+git clone https://github.com/AdityaTHR/decentralized-legal-ai.git
+cd decentralized-legal-ai
 python -m venv venv
+
 
 Activate venv
 Windows:
+python -m venv venv
 venv\Scripts\activate
-
-Linux/Mac:
-source venv/bin/activate
 pip install -r requirements.txt
 python -m spacy download en_core_web_sm
 uvicorn document_ai:app --reload --host 0.0.0.0 --port 8000
+
+
+Linux/Mac:
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+python3 -m spacy download en_core_web_sm
+uvicorn document_ai:app --reload --host 0.0.0.0 --port 8000
+
 
 Access API at `http://localhost:8000/` and frontend via `index.html`.
 
