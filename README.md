@@ -55,7 +55,7 @@ Access API at `http://localhost:8000/` and frontend via `index.html`.
 ### Deploying on Akash Network
 - Build and push Docker image using included `Dockerfile.akash`.
 - Use `akash-deploy.yml` SDL file to deploy on Akash Network GPU cloud.
-- Refer to [AKASH_DEPLOYMENT.md](./AKASH_DEPLOYMENT.md) for full deployment steps.
+- Refer to [AKASH_DEPLOYMENT.md](docs/AKASH_DEPLOYMENT.md) for full deployment steps.
 
 ## Usage
 - Upload legal documents (PDF, DOCX, TXT) via API or frontend.
