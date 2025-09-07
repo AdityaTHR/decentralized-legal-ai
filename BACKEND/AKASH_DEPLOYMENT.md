@@ -32,9 +32,7 @@
 
 ### **Step 1: Get Free Akash Credits ($20)**
 
-1. **Join Akash India Telegram**: [Akash India Community](https://t.me/AkashNetworkIndia)
-2. **Message coordinators** for HackOdisha credits
-3. **Alternative**: Get credits at [Akash Console](https://console.akash.network)
+1. Get credits at [Akash Console](https://console.akash.network)
 
 ### **Step 2: Prepare Your Application**
 
@@ -278,7 +276,6 @@ logger.info("Document processed")  # Generic logs only
 ### **Akash Network Resources**
 - **Documentation**: [docs.akash.network](https://docs.akash.network)
 - **Community**: [Akash Discord](https://discord.akash.network)
-- **Telegram**: [Akash India](https://t.me/AkashNetworkIndia)
 
 ### **Quick Help**
 ```bash
