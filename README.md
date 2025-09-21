@@ -1,4 +1,4 @@
-# Decentralized AI Legal Assistant - HackOdisha 5.0
+# Decentralized AI Legal Assistant - NEXTGEN HACKATHON
 
 ## Overview
 The Decentralized AI Legal Assistant is an AI-powered application designed to simplify legal document processing in India. It supports multilingual summarization, semantic search, entity extraction, and petition generation with special focus on Odia language support. The backend is optimized for deployment on Akash Network’s decentralized GPU cloud infrastructure, allowing users to access advanced AI without any local resource requirements.
